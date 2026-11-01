@@ -1,0 +1,311 @@
+/* ==========================================================================
+   PROYECTO: Aroma Café - Cafetería & Panadería Artesanal
+   ASIGNATURA: FrontEnd (FrontEndIVIVFI2026C)
+   PÁGINA: contacto.html (Formulario de Reserva y Base de Datos)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LAYOUT DE CONTACTO Y RESERVAS
+   -------------------------------------------------------------------------- */
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.booking-info-card {
+  background: var(--bg-surface);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.info-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-accent-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.info-row h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.info-row p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   2. ESTILOS DEL FORMULARIO
+   -------------------------------------------------------------------------- */
+.form-card {
+  background: var(--bg-surface);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: var(--shadow-md);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+.form-group {
+  margin-bottom: 1.4rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.form-label .required {
+  color: var(--color-danger);
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  background-color: #fdfbf7;
+  border: 1.5px solid #ebd9c8;
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: var(--color-accent);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(196, 139, 82, 0.15);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 110px;
+}
+
+select.form-control {
+  cursor: pointer;
+}
+
+.error-message {
+  font-size: 0.82rem;
+  color: var(--color-danger);
+  margin-top: 0.35rem;
+  display: none;
+}
+
+.form-group.has-error .form-control {
+  border-color: var(--color-danger);
+  background-color: #fff9f9;
+}
+
+.form-group.has-error .error-message {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   3. ALERTAS DE ESTADO
+   -------------------------------------------------------------------------- */
+.alert {
+  padding: 1.1rem 1.4rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.8rem;
+  font-size: 0.95rem;
+  animation: fadeInUp 0.4s ease;
+}
+
+.alert-success {
+  background: #edf7ed;
+  border: 1px solid #b7dfb9;
+  color: #1e4620;
+}
+
+.alert-danger {
+  background: #fdf2f2;
+  border: 1px solid #f8b4b4;
+  color: #9b1c1c;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. ESTILOS DE LA TABLA DE RESERVAS EN BASE DE DATOS
+   -------------------------------------------------------------------------- */
+.db-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.db-search-box {
+  position: relative;
+  min-width: 300px;
+  flex-grow: 1;
+}
+
+.db-search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.8rem;
+  background: #ffffff;
+  border: 1.5px solid #ebd9c8;
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.db-search-box input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 10px rgba(120, 72, 37, 0.15);
+}
+
+.db-search-box .search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.db-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.db-table-container {
+  background: #ffffff;
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.db-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.db-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+.db-table th {
+  background: #fbf5ef;
+  padding: 1.1rem 1.4rem;
+  font-family: var(--font-base);
+  font-weight: 700;
+  color: var(--color-primary);
+  border-bottom: 2px solid #ebd9c8;
+  white-space: nowrap;
+}
+
+.db-table td {
+  padding: 1.1rem 1.4rem;
+  border-bottom: 1px solid #f4ede4;
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+
+.db-table tr:hover td {
+  background: #fcf9f5;
+}
+
+.badge-id {
+  background: var(--color-accent-light);
+  color: var(--color-primary);
+  font-weight: bold;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}
+
+.badge-guests {
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.82rem;
+}
+
+.btn-delete-row {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-delete-row:hover {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.empty-state-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-card {
+    padding: 2rem 1.2rem;
+  }
+}
