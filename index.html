@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aroma Café - Cafetería y Panadería Artesanal. Granos de café de especialidad, pan de masa madre y un ambiente cálido para compartir.">
+  <meta name="author" content="Equipo Aroma Café">
+  <title>Aroma Café | Cafetería & Panadería Artesanal</title>
+
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hojas de Estilo CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       CABECERA Y NAVEGACIÓN PRINCIPAL (3 PÁGINAS)
+       ========================================================================= -->
+  <header class="navbar" id="mainHeader">
+    <div class="container">
+      <a href="index.html" class="logo" id="brandLogo">
+        <div class="logo-badge">☕</div>
+        Aroma<span>Café</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active" id="navHome">Inicio</a></li>
+          <li><a href="servicios.html" class="nav-link" id="navMenuPage">Carta & Menú</a></li>
+          <li><a href="contacto.html" class="nav-link" id="navBooking">Reservas & BD</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contacto.html" class="btn btn-primary btn-sm" id="navCta">
+          Reservar Mesa ☕
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       CONTENIDO PRINCIPAL: PORTADA (HERO), ESPECIALIDADES Y NOSOTROS
+       ========================================================================= -->
+  <main id="mainContent">
+
+    <!-- 1. SECCIÓN HERO (PORTADA) -->
+    <section class="hero" id="heroSection">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content fade-in-up">
+            <div class="hero-badge animate-pulse">
+              <span>🌾 Granos de Origen Seleccionado</span>
+              <span>• Tueste Diario</span>
+            </div>
+
+            <h1 class="hero-title">
+              El auténtico sabor del café tostado y pan de <span>masa madre</span>.
+            </h1>
+
+            <p class="hero-description">
+              En Aroma Café combinamos la tradición del café de especialidad con el arte de la panadería artesanal. Un rincón cálido diseñado para estudiar, conversar y deleitar tus sentidos.
+            </p>
+
+            <div class="hero-actions">
+              <a href="contacto.html" class="btn btn-primary btn-lg" id="heroCtaPrimary">
+                Reservar tu Mesa 📅
+              </a>
+              <a href="servicios.html" class="btn btn-secondary btn-lg" id="heroCtaSecondary">
+                Ver Nuestra Carta 🥐
+              </a>
+            </div>
+
+            <!-- Métricas estadísticas de calidad -->
+            <div class="hero-stats" id="heroStats">
+              <div class="stat-item">
+                <div class="stat-num counter-number" data-target="100" data-suffix="%">0%</div>
+                <p class="stat-label">Café de Origen</p>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num counter-number" data-target="18" data-suffix="+">0</div>
+                <p class="stat-label">Recetas de Pan</p>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num counter-number" data-target="48" data-suffix="h">0</div>
+                <p class="stat-label">Fermentación Lenta</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mockup Visual del Café Destacado -->
+          <div class="hero-visual">
+            <div class="hero-card-featured hover-elevate">
+              <div class="coffee-illustration animate-float">
+                <span class="steam-icon steam-animation">♨️</span>
+                ☕
+              </div>
+              <span class="hours-tag">Abierto Hoy: 7:00 AM - 9:00 PM</span>
+              <h3 style="margin-top: 1rem;">Capuchino de Avellanas</h3>
+              <p>Espresso doble con leche cremada al vapor, jarabe artesanal de avellana y canela molida fresca.</p>
+              <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-primary); font-weight: bold; margin-bottom: 1.2rem;">
+                $3.50
+              </div>
+              <a href="contacto.html" class="btn btn-outline btn-sm" style="width: 100%;">
+                Pedir para tu Mesa
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SECCIÓN DE ESPECIALIDADES DE LA CASA -->
+    <section class="section" id="specialtiesSection" style="background-color: var(--bg-surface);">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Nuestras Especialidades</span>
+          <h2>Hecho a mano, con <span style="color: var(--color-primary); font-style: italic;">amor y paciencia</span></h2>
+          <p>
+            Cuidamos cada detalle desde la selección de granos en fincas sostenibles hasta el horneado a primera hora de la mañana.
+          </p>
+        </header>
+
+        <div class="specialties-grid">
+          
+          <article class="specialty-card">
+            <div class="specialty-icon">☕</div>
+            <h3>Café de Especialidad</h3>
+            <p>
+              Extracciones precisas en métodos V60, Chemex y Espresso Bar con notas aromáticas florales y achocolatadas.
+            </p>
+          </article>
+
+          <article class="specialty-card">
+            <div class="specialty-icon">🥐</div>
+            <h3>Panadería de Masa Madre</h3>
+            <p>
+              Panes rústicos, baguettes y croissants horneados diariamente con fermentación natural sin conservantes químicos.
+            </p>
+          </article>
+
+          <article class="specialty-card">
+            <div class="specialty-icon">🍰</div>
+            <h3>Repostería Fina</h3>
+            <p>
+              Cheesecakes, tartas de frutos rojos, galletas de chispas y postres tradicionales con recetas de herencia familiar.
+            </p>
+          </article>
+
+          <article class="specialty-card">
+            <div class="specialty-icon">🥪</div>
+            <h3>Desayunos & Brunch</h3>
+            <p>
+              Tostadas con aguacate, sándwiches en pan brioche artesanal y opciones ligeras para iniciar tu jornada con energía.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. SECCIÓN SOBRE NOSOTROS & HISTORIA (INTEGRADA) -->
+    <section class="section" id="aboutSection" style="background-color: var(--bg-warm);">
+      <div class="container">
+        <div class="about-section-grid">
+          
+          <div>
+            <span class="section-tag">Nuestra Pasión</span>
+            <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">
+              Un café con historia, un pan con <span style="color: var(--color-primary); font-style: italic;">alma</span>
+            </h2>
+            <p>
+              Nacimos con la ilusión de crear un espacio donde el aroma del café recién tostado y el crujido del pan caliente hagan sentir a cada persona como en casa.
+            </p>
+            
+            <ul class="about-features-list">
+              <li><span>🌱</span> <strong>Comercio Justo:</strong> Granos de café de caficultores de las montañas andinas de Trujillo.</li>
+              <li><span>🥖</span> <strong>Panadería Honesta:</strong> Masa madre viva de fermentación lenta de 48 horas sin aditivos.</li>
+              <li><span>🏡</span> <strong>Espacio Cálido:</strong> Mesas confortables, wifi veloz y enchufes para estudiar o conversar.</li>
+            </ul>
+          </div>
+
+          <!-- Hitos / Mini Timeline -->
+          <div class="timeline-mini">
+            <div class="timeline-mini-item">
+              <div class="timeline-mini-year">2021 • El Comienzo</div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Primer Tostador Artesanal</h4>
+              <p style="font-size: 0.88rem; margin: 0; color: var(--text-secondary);">Comenzamos tostando pequeños lotes y compartiendo café entre amigos y clientes locales.</p>
+            </div>
+
+            <div class="timeline-mini-item">
+              <div class="timeline-mini-year">2023 • Masa Madre</div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Llegada del Horno de Piedra</h4>
+              <p style="font-size: 0.88rem; margin: 0; color: var(--text-secondary);">Incorporamos el horno artesanal y panes rústicos con masa madre viva.</p>
+            </div>
+
+            <div class="timeline-mini-item">
+              <div class="timeline-mini-year">2026 • Innovación Web</div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Portal Digital & IndexedDB</h4>
+              <p style="font-size: 0.88rem; margin: 0; color: var(--text-secondary);">Lanzamiento de la plataforma web oficial para reservas de mesas en tiempo real.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. LLAMADA A LA ACCIÓN (CTA) -->
+    <section class="section" id="ctaSection">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>¿Quieres asegurar tu mesa favorita?</h2>
+          <p>
+            Reserva con anticipación para tus reuniones de estudio, encuentros o una tarde agradable con amigos. Guardamos tus reservas en nuestra <strong>Base de Datos</strong>.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="contacto.html" class="btn btn-secondary btn-lg" style="background: #ffffff; color: var(--color-primary); font-weight: bold;">
+              Hacer Reserva Ahora 📅
+            </a>
+            <a href="servicios.html" class="btn btn-outline btn-lg" style="color: #ffffff; border-color: #ffffff;">
+              Ver Nuestra Carta →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       PIE DE PÁGINA (FOOTER)
+       ========================================================================= -->
+  <footer class="footer" id="mainFooter">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: #ffffff;">
+            <div class="logo-badge">☕</div>
+            Aroma<span style="color: var(--color-accent);">Café</span>
+          </a>
+          <p style="margin-top: 1rem;">
+            Cafetería & Panadería Artesanal. Café de especialidad y masa madre horneada a diario.
+          </p>
+          <div style="margin-top: 1rem; color: #d8c3b4; font-size: 0.85rem;">
+            📍 Av. Principal • Valera, Estado Trujillo
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Carta & Menú</a></li>
+            <li><a href="contacto.html">Reservas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <ul class="footer-links" style="color: #b59f91; font-size: 0.88rem;">
+            <li><strong style="color: #ffffff;">Lunes a Viernes</strong></li>
+            <li>7:00 AM – 8:00 PM</li>
+            <li style="margin-top: 0.5rem;"><strong style="color: #ffffff;">Fines de Semana</strong></li>
+            <li>8:00 AM – 9:00 PM</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul class="footer-links" style="color: #b59f91; font-size: 0.88rem;">
+            <li>📞 +58 412-1234567</li>
+            <li>✉️ info@aromacafe.com</li>
+            <li>💬 Atención personalizada</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom" style="justify-content: center; text-align: center;">
+        <div>&copy; 2026 Aroma Café. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/db.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

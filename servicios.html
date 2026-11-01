@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carta y Menú de Aroma Café. Variedades de café de especialidad, panadería de masa madre y repostería fina.">
+  <meta name="author" content="Equipo Aroma Café">
+  <title>Carta & Menú | Aroma Café</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hojas de Estilos CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/servicios.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       CABECERA Y NAVEGACIÓN PRINCIPAL (3 PÁGINAS)
+       ========================================================================= -->
+  <header class="navbar" id="mainHeader">
+    <div class="container">
+      <a href="index.html" class="logo" id="brandLogo">
+        <div class="logo-badge">☕</div>
+        Aroma<span>Café</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link" id="navHome">Inicio</a></li>
+          <li><a href="servicios.html" class="nav-link active" id="navMenuPage">Carta & Menú</a></li>
+          <li><a href="contacto.html" class="nav-link" id="navBooking">Reservas & BD</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contacto.html" class="btn btn-primary btn-sm">
+          Reservar Mesa ☕
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       CONTENIDO PRINCIPAL: CARTA Y MENÚ
+       ========================================================================= -->
+  <main id="mainContent">
+    
+    <section class="section" id="menuSection">
+      <div class="container">
+        
+        <header class="section-header fade-in-up">
+          <span class="section-tag">Nuestra Carta</span>
+          <h1>Sabores que inspiran <span style="color: var(--color-primary); font-style: italic;">momentos únicos</span></h1>
+          <p>
+            Preparaciones artesanales elaboradas al instante con materias primas de la más alta calidad y pasión por los detalles.
+          </p>
+        </header>
+
+        <!-- Grid de Productos -->
+        <div class="menu-grid">
+          
+          <!-- Producto 1 -->
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <div>
+                <h3>Espresso Caramelo</h3>
+                <span class="menu-badge">⭐ Especialidad</span>
+              </div>
+              <div class="menu-price">$2.50</div>
+            </div>
+            <p class="menu-desc">
+              Extracción corta de café de altura con una densa capa de crema natural, notas aromáticas a chocolate amargo y un toque de caramelo artesanal.
+            </p>
+            <div class="menu-ingredients">
+              <span class="tag-ingredient">100% Arábica</span>
+              <span class="tag-ingredient">Tueste Medio</span>
+              <span class="tag-ingredient">Sin Azúcar Añadida</span>
+            </div>
+            <a href="contacto.html" class="btn btn-secondary btn-sm" style="width: 100%;">Reservar para Probar</a>
+          </article>
+
+          <!-- Producto 2 -->
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <div>
+                <h3>Latte Vainilla & Canela</h3>
+                <span class="menu-badge" style="background:#e8f5e9; color:#2e7d32;">🌱 Más Pedido</span>
+              </div>
+              <div class="menu-price">$3.80</div>
+            </div>
+            <p class="menu-desc">
+              Leche emulsionada a temperatura ideal fusionada con espresso doble y extracto puro de vainilla natural, espolvoreado con canela de Ceilán.
+            </p>
+            <div class="menu-ingredients">
+              <span class="tag-ingredient">Leche de Vaca o Almendras</span>
+              <span class="tag-ingredient">Canela en Rama</span>
+            </div>
+            <a href="contacto.html" class="btn btn-secondary btn-sm" style="width: 100%;">Reservar para Probar</a>
+          </article>
+
+          <!-- Producto 3 -->
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <div>
+                <h3>Croissant de Mantequilla</h3>
+                <span class="menu-badge">🥐 Recién Horneado</span>
+              </div>
+              <div class="menu-price">$2.80</div>
+            </div>
+            <p class="menu-desc">
+              Hojaldre artesanal francés con 72 capas de laminado en mantequilla pura, corteza dorada y crujiente con interior suave y etéreo.
+            </p>
+            <div class="menu-ingredients">
+              <span class="tag-ingredient">Masa Madre</span>
+              <span class="tag-ingredient">Mantequilla Pura</span>
+              <span class="tag-ingredient">Fermentación 24h</span>
+            </div>
+            <a href="contacto.html" class="btn btn-secondary btn-sm" style="width: 100%;">Reservar para Probar</a>
+          </article>
+
+          <!-- Producto 4 -->
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <div>
+                <h3>Hogaza Rústica de Masa Madre</h3>
+                <span class="menu-badge">🌾 100% Orgánico</span>
+              </div>
+              <div class="menu-price">$4.50</div>
+            </div>
+            <p class="menu-desc">
+              Pan artesanal de corteza gruesa y miga alveolada. Fermentado durante 48 horas con masa madre propia de más de 4 años de vida.
+            </p>
+            <div class="menu-ingredients">
+              <span class="tag-ingredient">Harina Integral</span>
+              <span class="tag-ingredient">Semillas de Chía y Sésamo</span>
+            </div>
+            <a href="contacto.html" class="btn btn-secondary btn-sm" style="width: 100%;">Reservar para Probar</a>
+          </article>
+
+          <!-- Producto 5 -->
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <div>
+                <h3>Tarta de Frutos del Bosque</h3>
+                <span class="menu-badge" style="background:#fce4ec; color:#c2185b;">🍰 Repostería</span>
+              </div>
+              <div class="menu-price">$4.00</div>
+            </div>
+            <p class="menu-desc">
+              Base crocante de almendras rellena de crema pastelera ligera y cubierta con fresas, moras y arándanos frescos de agricultores locales.
+            </p>
+            <div class="menu-ingredients">
+              <span class="tag-ingredient">Frutas Frescas</span>
+              <span class="tag-ingredient">Bajo en Azúcar</span>
+            </div>
+            <a href="contacto.html" class="btn btn-secondary btn-sm" style="width: 100%;">Reservar para Probar</a>
+          </article>
+
+          <!-- Producto 6 -->
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <div>
+                <h3>Tostada Nórdica de Aguacate</h3>
+                <span class="menu-badge">🥑 Brunch</span>
+              </div>
+              <div class="menu-price">$5.20</div>
+            </div>
+            <p class="menu-desc">
+              Rebanada gruesa de pan de masa madre tostada con aceite de oliva extra virgen, aguacate fresco machacado, semillas tostadas y huevo poché.
+            </p>
+            <div class="menu-ingredients">
+              <span class="tag-ingredient">Aguacate Hass</span>
+              <span class="tag-ingredient">Huevo de Campo</span>
+            </div>
+            <a href="contacto.html" class="btn btn-secondary btn-sm" style="width: 100%;">Reservar para Probar</a>
+          </article>
+
+        </div>
+
+        <!-- Combos Especiales -->
+        <div class="combos-box">
+          <h2 style="text-align: center; font-size: 1.8rem; margin-bottom: 0.5rem;">
+            Combos & Desayunos Especiales
+          </h2>
+          <p style="text-align: center; color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem auto;">
+            Ideales para comenzar tu mañana o disfrutar de una pausa productiva a precio preferencial.
+          </p>
+
+          <div class="combos-grid">
+            <div class="combo-item">
+              <h4>Combo Mañanero</h4>
+              <div class="combo-price">$5.00</div>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">
+                Café latte o capuchino grande + Croissant recién horneado con mermelada artesanal.
+              </p>
+            </div>
+            <div class="combo-item">
+              <h4>Combo Estudio / Trabajo</h4>
+              <div class="combo-price">$6.50</div>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">
+                Café filtrado refill ilimitado por 2 horas + Porción de tarta casera a elección.
+              </p>
+            </div>
+            <div class="combo-item">
+              <h4>Combo Brunch Artesanal</h4>
+              <div class="combo-price">$8.50</div>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">
+                Tostada nórdica de aguacate + Jugo natural de naranja exprimida + Café espresso doble.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       PIE DE PÁGINA
+       ========================================================================= -->
+  <footer class="footer" id="mainFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: #ffffff;">
+            <div class="logo-badge">☕</div>
+            Aroma<span style="color: var(--color-accent);">Café</span>
+          </a>
+          <p style="margin-top: 1rem;">
+            Cafetería & Panadería Artesanal. Café de especialidad y masa madre horneada a diario.
+          </p>
+          <div style="margin-top: 1rem; color: #d8c3b4; font-size: 0.85rem;">
+            📍 Av. Principal • Valera, Estado Trujillo
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Carta & Menú</a></li>
+            <li><a href="contacto.html">Reservas</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <ul class="footer-links" style="color: #b59f91; font-size: 0.88rem;">
+            <li><strong style="color: #ffffff;">Lunes a Viernes</strong></li>
+            <li>7:00 AM – 8:00 PM</li>
+            <li style="margin-top: 0.5rem;"><strong style="color: #ffffff;">Fines de Semana</strong></li>
+            <li>8:00 AM – 9:00 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul class="footer-links" style="color: #b59f91; font-size: 0.88rem;">
+            <li>📞 +58 412-1234567</li>
+            <li>✉️ info@aromacafe.com</li>
+            <li>💬 Atención personalizada</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom" style="justify-content: center; text-align: center;">
+        <div>&copy; 2026 Aroma Café. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/db.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
